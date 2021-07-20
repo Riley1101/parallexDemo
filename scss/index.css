@@ -1,0 +1,115 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.parallex__container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-perspective: 8px;
+          perspective: 8px;
+  -webkit-perspective-origin: 0%;
+          perspective-origin: 0%;
+}
+
+.background {
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(-5px);
+          transform: translateZ(-5px);
+}
+
+.background .background-image {
+  width: 100%;
+  height: auto;
+}
+
+.foreground {
+  height: 300vh;
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  -webkit-transform: translateZ(3px) scale(0.625);
+          transform: translateZ(3px) scale(0.625);
+}
+
+.foreground__contents {
+  margin: 0em auto;
+  width: 80%;
+  height: 100%;
+  -webkit-perspective: 8px;
+          perspective: 8px;
+  -webkit-perspective-origin: 0%;
+          perspective-origin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 2em;
+}
+
+.foreground__contents .card {
+  color: white;
+  width: 480px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+}
+
+.foreground__contents .card h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.foreground__contents .card p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.foreground__contents .card a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.foreground__contents .card:nth-of-type(1) {
+  margin: 0;
+}
+
+.foreground__contents .card:nth-of-type(2) {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.foreground__contents .card:nth-of-type(3) {
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: normal;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
